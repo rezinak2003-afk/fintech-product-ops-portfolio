@@ -1,0 +1,8 @@
+Issue Key,Type,Summary,Priority,Acceptance Criteria,Status
+CALC-1,Story,Calculate monthly EMI,High,"Zero-rate and non-zero-rate formulas; validate P>0 and tenure integer",Done
+CALC-2,Story,Include fee and tax breakdown,High,"Show processing fee fixed fee fee tax and net proceeds",Done
+CALC-3,Story,Estimate effective annual borrowing rate,High,"Solve cashflow IRR and label assumptions and limitations",Done
+CALC-4,Story,Add optional consent-based GA4 events,Medium,"No events before opt-in; never send entered loan values",Done
+CALC-5,Story,Connect feedback form,Medium,"Use configurable Google Forms responder URL",Ready for account setup
+CALC-6,Task,Validate with independent financial calculator,High,"Record test cases and differences; legal APR not claimed",To do
+CALC-7,Task,Accessibility and mobile QA,Medium,"Keyboard, labels, focus, responsive layout checked",To do

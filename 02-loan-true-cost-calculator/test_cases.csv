@@ -1,0 +1,6 @@
+Test_ID,Principal,Annual_Rate_Percent,Tenure_Months,Fee_Percent,Fixed_Fee,Fee_Tax_Percent,Expected_Check
+TC01,50000,0,12,0,0,0,"EMI should be approximately INR 4166.67; no fees; effective annual rate approximately 0%"
+TC02,50000,12,12,0,0,0,"EMI should be approximately INR 4442.44; effective annual rate reflects monthly compounding and is above 12%"
+TC03,50000,18,12,2,0,18,"Fee is INR 1000; tax INR 180; net proceeds INR 48820; effective annual estimate exceeds no-fee case"
+TC04,1000,10,12,25,1000,18,"Net proceeds non-positive; UI should say estimate is not meaningful"
+TC05,50000,18,0,2,0,18,"Invalid tenure; error is visible and no misleading result is displayed"
