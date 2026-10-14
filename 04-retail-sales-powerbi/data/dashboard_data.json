@@ -1,0 +1,874 @@
+{
+  "meta": {
+    "title": "Retail Sales & Customer Analytics",
+    "dataset": "UCI Online Retail II",
+    "source_url": "https://archive.ics.uci.edu/dataset/502/online+retail+ii",
+    "citation": "Chen, D. (2019). Online Retail II [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5CG6D.",
+    "license": "CC BY 4.0",
+    "published_aggregate_source": "https://github.com/ndkn-code/online-retail-analytics",
+    "provenance_note": "Static dashboard tables are adapted from publicly published aggregate extract tables in the cited analysis repository. The raw UCI workbook is not bundled. The included Python pipeline can regenerate independent outputs from the official dataset.",
+    "period": "2009-12 to 2011-12 (final month partial through 9 Dec 2011)",
+    "currency": "GBP (£)",
+    "limitations": [
+      "Historic data, not current business performance.",
+      "Dashboard uses aggregate-level data; customer identifiers are not included.",
+      "2011-12 is a partial month and its return percentage is not comparable with complete months.",
+      "Precomputed aggregate extracts are attributed in DATA_PROVENANCE.md."
+    ]
+  },
+  "kpis": {
+    "revenue_gbp": 19643861.62,
+    "orders": 39516,
+    "customers": 5852,
+    "products": 4894,
+    "countries": 43,
+    "avg_order_value_gbp": 497.11,
+    "clean_sales_lines": 1003340,
+    "raw_rows": 1067371,
+    "return_revenue_gbp": 716000,
+    "return_revenue_pct": 3.65,
+    "identified_customer_repeat_pct": 72.0,
+    "period_start": "2009-12-01",
+    "period_end": "2011-12-09"
+  },
+  "monthly": [
+    {
+      "month": "2009-12",
+      "revenue_gbp": 797901.16,
+      "orders": 1666,
+      "mom_growth_pct": null
+    },
+    {
+      "month": "2010-01",
+      "revenue_gbp": 612297.42,
+      "orders": 1049,
+      "mom_growth_pct": -23.3
+    },
+    {
+      "month": "2010-02",
+      "revenue_gbp": 537909.67,
+      "orders": 1189,
+      "mom_growth_pct": -12.1
+    },
+    {
+      "month": "2010-03",
+      "revenue_gbp": 761705.98,
+      "orders": 1647,
+      "mom_growth_pct": 41.6
+    },
+    {
+      "month": "2010-04",
+      "revenue_gbp": 646340.93,
+      "orders": 1435,
+      "mom_growth_pct": -15.1
+    },
+    {
+      "month": "2010-05",
+      "revenue_gbp": 643492.03,
+      "orders": 1484,
+      "mom_growth_pct": -0.4
+    },
+    {
+      "month": "2010-06",
+      "revenue_gbp": 696583.19,
+      "orders": 1612,
+      "mom_growth_pct": 8.3
+    },
+    {
+      "month": "2010-07",
+      "revenue_gbp": 632994.32,
+      "orders": 1507,
+      "mom_growth_pct": -9.1
+    },
+    {
+      "month": "2010-08",
+      "revenue_gbp": 674037.72,
+      "orders": 1402,
+      "mom_growth_pct": 6.5
+    },
+    {
+      "month": "2010-09",
+      "revenue_gbp": 869243.12,
+      "orders": 1789,
+      "mom_growth_pct": 29.0
+    },
+    {
+      "month": "2010-10",
+      "revenue_gbp": 1094435.98,
+      "orders": 2244,
+      "mom_growth_pct": 25.9
+    },
+    {
+      "month": "2010-11",
+      "revenue_gbp": 1429700.78,
+      "orders": 2719,
+      "mom_growth_pct": 30.6
+    },
+    {
+      "month": "2010-12",
+      "revenue_gbp": 775638.36,
+      "orders": 1550,
+      "mom_growth_pct": -45.7
+    },
+    {
+      "month": "2011-01",
+      "revenue_gbp": 670380.24,
+      "orders": 1081,
+      "mom_growth_pct": -13.6
+    },
+    {
+      "month": "2011-02",
+      "revenue_gbp": 507799.87,
+      "orders": 1093,
+      "mom_growth_pct": -24.3
+    },
+    {
+      "month": "2011-03",
+      "revenue_gbp": 689833.51,
+      "orders": 1440,
+      "mom_growth_pct": 35.8
+    },
+    {
+      "month": "2011-04",
+      "revenue_gbp": 515377.99,
+      "orders": 1235,
+      "mom_growth_pct": -25.3
+    },
+    {
+      "month": "2011-05",
+      "revenue_gbp": 739953.0,
+      "orders": 1668,
+      "mom_growth_pct": 43.6
+    },
+    {
+      "month": "2011-06",
+      "revenue_gbp": 737558.98,
+      "orders": 1525,
+      "mom_growth_pct": -0.3
+    },
+    {
+      "month": "2011-07",
+      "revenue_gbp": 688219.34,
+      "orders": 1452,
+      "mom_growth_pct": -6.7
+    },
+    {
+      "month": "2011-08",
+      "revenue_gbp": 724216.5,
+      "orders": 1339,
+      "mom_growth_pct": 5.2
+    },
+    {
+      "month": "2011-09",
+      "revenue_gbp": 1028320.38,
+      "orders": 1818,
+      "mom_growth_pct": 42.0
+    },
+    {
+      "month": "2011-10",
+      "revenue_gbp": 1103314.25,
+      "orders": 2005,
+      "mom_growth_pct": 7.3
+    },
+    {
+      "month": "2011-11",
+      "revenue_gbp": 1452115.98,
+      "orders": 2751,
+      "mom_growth_pct": 31.6
+    },
+    {
+      "month": "2011-12",
+      "revenue_gbp": 614490.92,
+      "orders": 816,
+      "mom_growth_pct": -57.7
+    }
+  ],
+  "countries": [
+    {
+      "country": "United Kingdom",
+      "revenue_gbp": 16801019.37,
+      "pct_of_total": 85.53
+    },
+    {
+      "country": "EIRE",
+      "revenue_gbp": 623414.16,
+      "pct_of_total": 3.17
+    },
+    {
+      "country": "Netherlands",
+      "revenue_gbp": 549773.41,
+      "pct_of_total": 2.8
+    },
+    {
+      "country": "Germany",
+      "revenue_gbp": 383289.0,
+      "pct_of_total": 1.95
+    },
+    {
+      "country": "France",
+      "revenue_gbp": 311090.29,
+      "pct_of_total": 1.58
+    },
+    {
+      "country": "Australia",
+      "revenue_gbp": 167800.01,
+      "pct_of_total": 0.85
+    },
+    {
+      "country": "Spain",
+      "revenue_gbp": 97766.75,
+      "pct_of_total": 0.5
+    },
+    {
+      "country": "Switzerland",
+      "revenue_gbp": 94024.59,
+      "pct_of_total": 0.48
+    },
+    {
+      "country": "Sweden",
+      "revenue_gbp": 86319.14,
+      "pct_of_total": 0.44
+    },
+    {
+      "country": "Denmark",
+      "revenue_gbp": 67422.69,
+      "pct_of_total": 0.34
+    },
+    {
+      "country": "Belgium",
+      "revenue_gbp": 56993.17,
+      "pct_of_total": 0.29
+    },
+    {
+      "country": "Portugal",
+      "revenue_gbp": 47338.27,
+      "pct_of_total": 0.24
+    },
+    {
+      "country": "Channel Islands",
+      "revenue_gbp": 44030.33,
+      "pct_of_total": 0.22
+    },
+    {
+      "country": "Japan",
+      "revenue_gbp": 43023.91,
+      "pct_of_total": 0.22
+    },
+    {
+      "country": "Norway",
+      "revenue_gbp": 38575.36,
+      "pct_of_total": 0.2
+    },
+    {
+      "country": "Italy",
+      "revenue_gbp": 28937.5,
+      "pct_of_total": 0.15
+    },
+    {
+      "country": "Finland",
+      "revenue_gbp": 25180.1,
+      "pct_of_total": 0.13
+    },
+    {
+      "country": "Cyprus",
+      "revenue_gbp": 24484.26,
+      "pct_of_total": 0.12
+    },
+    {
+      "country": "Austria",
+      "revenue_gbp": 20297.01,
+      "pct_of_total": 0.1
+    },
+    {
+      "country": "Greece",
+      "revenue_gbp": 18711.19,
+      "pct_of_total": 0.1
+    },
+    {
+      "country": "Hong Kong",
+      "revenue_gbp": 13666.45,
+      "pct_of_total": 0.07
+    },
+    {
+      "country": "Singapore",
+      "revenue_gbp": 13158.16,
+      "pct_of_total": 0.07
+    },
+    {
+      "country": "Israel",
+      "revenue_gbp": 11328.81,
+      "pct_of_total": 0.06
+    },
+    {
+      "country": "Unspecified",
+      "revenue_gbp": 10927.16,
+      "pct_of_total": 0.06
+    },
+    {
+      "country": "United Arab Emirates",
+      "revenue_gbp": 10273.23,
+      "pct_of_total": 0.05
+    },
+    {
+      "country": "Poland",
+      "revenue_gbp": 10214.29,
+      "pct_of_total": 0.05
+    },
+    {
+      "country": "USA",
+      "revenue_gbp": 7920.01,
+      "pct_of_total": 0.04
+    },
+    {
+      "country": "Iceland",
+      "revenue_gbp": 4921.53,
+      "pct_of_total": 0.03
+    },
+    {
+      "country": "Lithuania",
+      "revenue_gbp": 4892.68,
+      "pct_of_total": 0.02
+    },
+    {
+      "country": "Malta",
+      "revenue_gbp": 4757.34,
+      "pct_of_total": 0.02
+    },
+    {
+      "country": "Canada",
+      "revenue_gbp": 4332.1,
+      "pct_of_total": 0.02
+    },
+    {
+      "country": "RSA",
+      "revenue_gbp": 3369.03,
+      "pct_of_total": 0.02
+    },
+    {
+      "country": "Bahrain",
+      "revenue_gbp": 3109.79,
+      "pct_of_total": 0.02
+    },
+    {
+      "country": "Thailand",
+      "revenue_gbp": 3070.54,
+      "pct_of_total": 0.02
+    },
+    {
+      "country": "Lebanon",
+      "revenue_gbp": 1905.58,
+      "pct_of_total": 0.01
+    },
+    {
+      "country": "Brazil",
+      "revenue_gbp": 1411.87,
+      "pct_of_total": 0.01
+    },
+    {
+      "country": "Bermuda",
+      "revenue_gbp": 1253.14,
+      "pct_of_total": 0.01
+    },
+    {
+      "country": "European Community",
+      "revenue_gbp": 1159.25,
+      "pct_of_total": 0.01
+    },
+    {
+      "country": "Korea",
+      "revenue_gbp": 1118.51,
+      "pct_of_total": 0.01
+    },
+    {
+      "country": "Czech Republic",
+      "revenue_gbp": 786.74,
+      "pct_of_total": 0.0
+    },
+    {
+      "country": "West Indies",
+      "revenue_gbp": 536.41,
+      "pct_of_total": 0.0
+    },
+    {
+      "country": "Saudi Arabia",
+      "revenue_gbp": 145.92,
+      "pct_of_total": 0.0
+    },
+    {
+      "country": "Nigeria",
+      "revenue_gbp": 112.57,
+      "pct_of_total": 0.0
+    }
+  ],
+  "products": [
+    {
+      "stock_code": "22423",
+      "product": "REGENCY CAKESTAND 3 TIER",
+      "units_sold": 26478,
+      "revenue_gbp": 330590.32
+    },
+    {
+      "stock_code": "85123A",
+      "product": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "units_sold": 94203,
+      "revenue_gbp": 257724.71
+    },
+    {
+      "stock_code": "85099B",
+      "product": "RED RETROSPOT JUMBO BAG",
+      "units_sold": 96757,
+      "revenue_gbp": 180569.34
+    },
+    {
+      "stock_code": "23843",
+      "product": "PAPER CRAFT , LITTLE BIRDIE",
+      "units_sold": 80995,
+      "revenue_gbp": 168469.6
+    },
+    {
+      "stock_code": "47566",
+      "product": "PARTY BUNTING",
+      "units_sold": 28200,
+      "revenue_gbp": 148318.28
+    },
+    {
+      "stock_code": "84879",
+      "product": "ASSORTED COLOUR BIRD ORNAMENT",
+      "units_sold": 80082,
+      "revenue_gbp": 129324.49
+    },
+    {
+      "stock_code": "22086",
+      "product": "PAPER CHAIN KIT 50'S CHRISTMAS",
+      "units_sold": 35084,
+      "revenue_gbp": 117760.29
+    },
+    {
+      "stock_code": "23166",
+      "product": "MEDIUM CERAMIC TOP STORAGE JAR",
+      "units_sold": 78033,
+      "revenue_gbp": 81700.92
+    },
+    {
+      "stock_code": "79321",
+      "product": "CHILLI LIGHTS",
+      "units_sold": 15841,
+      "revenue_gbp": 80540.88
+    },
+    {
+      "stock_code": "22197",
+      "product": "SMALL POPCORN HOLDER",
+      "units_sold": 88499,
+      "revenue_gbp": 79520.2
+    },
+    {
+      "stock_code": "22386",
+      "product": "JUMBO BAG PINK WITH WHITE SPOTS",
+      "units_sold": 39437,
+      "revenue_gbp": 76324.62
+    },
+    {
+      "stock_code": "84347",
+      "product": "ROTATING SILVER ANGELS T-LIGHT HLDR",
+      "units_sold": 31409,
+      "revenue_gbp": 71300.4
+    },
+    {
+      "stock_code": "20725",
+      "product": "LUNCH BAG RED SPOTTY",
+      "units_sold": 40317,
+      "revenue_gbp": 71106.29
+    },
+    {
+      "stock_code": "85099F",
+      "product": "JUMBO BAG STRAWBERRY",
+      "units_sold": 36860,
+      "revenue_gbp": 67985.77
+    },
+    {
+      "stock_code": "48138",
+      "product": "DOORMAT UNION FLAG",
+      "units_sold": 10077,
+      "revenue_gbp": 67010.31
+    },
+    {
+      "stock_code": "23084",
+      "product": "RABBIT NIGHT LIGHT",
+      "units_sold": 30739,
+      "revenue_gbp": 66870.03
+    },
+    {
+      "stock_code": "20685",
+      "product": "RED SPOTTY COIR DOORMAT",
+      "units_sold": 9783,
+      "revenue_gbp": 66417.47
+    },
+    {
+      "stock_code": "21137",
+      "product": "BLACK RECORD COVER FRAME",
+      "units_sold": 18739,
+      "revenue_gbp": 65189.29
+    },
+    {
+      "stock_code": "21843",
+      "product": "RETRO SPOT CAKE STAND",
+      "units_sold": 6128,
+      "revenue_gbp": 64918.3
+    },
+    {
+      "stock_code": "21931",
+      "product": "JUMBO STORAGE BAG SUKI",
+      "units_sold": 29182,
+      "revenue_gbp": 61537.55
+    }
+  ],
+  "returns": [
+    {
+      "month": "2009-12",
+      "sales_gbp": 797901.16,
+      "returns_gbp": 19558.08,
+      "return_rate_pct": 2.45
+    },
+    {
+      "month": "2010-01",
+      "sales_gbp": 612297.42,
+      "returns_gbp": 7465.63,
+      "return_rate_pct": 1.22
+    },
+    {
+      "month": "2010-02",
+      "sales_gbp": 537909.67,
+      "returns_gbp": 12575.44,
+      "return_rate_pct": 2.34
+    },
+    {
+      "month": "2010-03",
+      "sales_gbp": 761705.98,
+      "returns_gbp": 9603.85,
+      "return_rate_pct": 1.26
+    },
+    {
+      "month": "2010-04",
+      "sales_gbp": 646340.93,
+      "returns_gbp": 10025.26,
+      "return_rate_pct": 1.55
+    },
+    {
+      "month": "2010-05",
+      "sales_gbp": 643492.03,
+      "returns_gbp": 37192.89,
+      "return_rate_pct": 5.78
+    },
+    {
+      "month": "2010-06",
+      "sales_gbp": 696583.19,
+      "returns_gbp": 26336.86,
+      "return_rate_pct": 3.78
+    },
+    {
+      "month": "2010-07",
+      "sales_gbp": 632994.32,
+      "returns_gbp": 17132.73,
+      "return_rate_pct": 2.71
+    },
+    {
+      "month": "2010-08",
+      "sales_gbp": 674037.72,
+      "returns_gbp": 12397.6,
+      "return_rate_pct": 1.84
+    },
+    {
+      "month": "2010-09",
+      "sales_gbp": 869243.12,
+      "returns_gbp": 27686.42,
+      "return_rate_pct": 3.19
+    },
+    {
+      "month": "2010-10",
+      "sales_gbp": 1094435.98,
+      "returns_gbp": 25451.07,
+      "return_rate_pct": 2.33
+    },
+    {
+      "month": "2010-11",
+      "sales_gbp": 1429700.78,
+      "returns_gbp": 35098.98,
+      "return_rate_pct": 2.45
+    },
+    {
+      "month": "2010-12",
+      "sales_gbp": 775638.36,
+      "returns_gbp": 17547.86,
+      "return_rate_pct": 2.26
+    },
+    {
+      "month": "2011-01",
+      "sales_gbp": 670380.24,
+      "returns_gbp": 91525.05,
+      "return_rate_pct": 13.65
+    },
+    {
+      "month": "2011-02",
+      "sales_gbp": 507799.87,
+      "returns_gbp": 8335.52,
+      "return_rate_pct": 1.64
+    },
+    {
+      "month": "2011-03",
+      "sales_gbp": 689833.51,
+      "returns_gbp": 10504.3,
+      "return_rate_pct": 1.52
+    },
+    {
+      "month": "2011-04",
+      "sales_gbp": 515377.99,
+      "returns_gbp": 33316.06,
+      "return_rate_pct": 6.46
+    },
+    {
+      "month": "2011-05",
+      "sales_gbp": 739953.0,
+      "returns_gbp": 8948.23,
+      "return_rate_pct": 1.21
+    },
+    {
+      "month": "2011-06",
+      "sales_gbp": 737558.98,
+      "returns_gbp": 13713.84,
+      "return_rate_pct": 1.86
+    },
+    {
+      "month": "2011-07",
+      "sales_gbp": 688219.34,
+      "returns_gbp": 11407.26,
+      "return_rate_pct": 1.66
+    },
+    {
+      "month": "2011-08",
+      "sales_gbp": 724216.5,
+      "returns_gbp": 22926.57,
+      "return_rate_pct": 3.17
+    },
+    {
+      "month": "2011-09",
+      "sales_gbp": 1028320.38,
+      "returns_gbp": 16980.64,
+      "return_rate_pct": 1.65
+    },
+    {
+      "month": "2011-10",
+      "sales_gbp": 1103314.25,
+      "returns_gbp": 41613.03,
+      "return_rate_pct": 3.77
+    },
+    {
+      "month": "2011-11",
+      "sales_gbp": 1452115.98,
+      "returns_gbp": 24991.44,
+      "return_rate_pct": 1.72
+    },
+    {
+      "month": "2011-12",
+      "sales_gbp": 614490.92,
+      "returns_gbp": 174091.36,
+      "return_rate_pct": 28.33
+    }
+  ],
+  "rfm": [
+    {
+      "segment": "Champions",
+      "customers": 1460,
+      "pct_customers": 24.9,
+      "revenue_gbp": 11736911.48,
+      "pct_revenue": 68.8
+    },
+    {
+      "segment": "Loyal Customers",
+      "customers": 1220,
+      "pct_customers": 20.8,
+      "revenue_gbp": 2496427.65,
+      "pct_revenue": 14.6
+    },
+    {
+      "segment": "At Risk",
+      "customers": 830,
+      "pct_customers": 14.2,
+      "revenue_gbp": 1597027.22,
+      "pct_revenue": 9.4
+    },
+    {
+      "segment": "New / Potential Loyalists",
+      "customers": 449,
+      "pct_customers": 7.7,
+      "revenue_gbp": 412436.69,
+      "pct_revenue": 2.4
+    },
+    {
+      "segment": "Hibernating",
+      "customers": 701,
+      "pct_customers": 12.0,
+      "revenue_gbp": 340517.38,
+      "pct_revenue": 2.0
+    },
+    {
+      "segment": "Lost",
+      "customers": 809,
+      "pct_customers": 13.8,
+      "revenue_gbp": 279911.65,
+      "pct_revenue": 1.6
+    },
+    {
+      "segment": "Promising",
+      "customers": 383,
+      "pct_customers": 6.5,
+      "revenue_gbp": 205350.65,
+      "pct_revenue": 1.2
+    }
+  ],
+  "cohorts_month1": [
+    {
+      "cohort_month": "2009-12",
+      "cohort_size": 951,
+      "active_customers_month1": 333,
+      "retention_pct": 35.0
+    },
+    {
+      "cohort_month": "2010-01",
+      "cohort_size": 368,
+      "active_customers_month1": 79,
+      "retention_pct": 21.5
+    },
+    {
+      "cohort_month": "2010-02",
+      "cohort_size": 375,
+      "active_customers_month1": 88,
+      "retention_pct": 23.5
+    },
+    {
+      "cohort_month": "2010-03",
+      "cohort_size": 441,
+      "active_customers_month1": 84,
+      "retention_pct": 19.0
+    },
+    {
+      "cohort_month": "2010-04",
+      "cohort_size": 294,
+      "active_customers_month1": 56,
+      "retention_pct": 19.0
+    },
+    {
+      "cohort_month": "2010-05",
+      "cohort_size": 255,
+      "active_customers_month1": 40,
+      "retention_pct": 15.7
+    },
+    {
+      "cohort_month": "2010-06",
+      "cohort_size": 267,
+      "active_customers_month1": 47,
+      "retention_pct": 17.6
+    },
+    {
+      "cohort_month": "2010-07",
+      "cohort_size": 185,
+      "active_customers_month1": 29,
+      "retention_pct": 15.7
+    },
+    {
+      "cohort_month": "2010-08",
+      "cohort_size": 163,
+      "active_customers_month1": 32,
+      "retention_pct": 19.6
+    },
+    {
+      "cohort_month": "2010-09",
+      "cohort_size": 239,
+      "active_customers_month1": 55,
+      "retention_pct": 23.0
+    },
+    {
+      "cohort_month": "2010-10",
+      "cohort_size": 375,
+      "active_customers_month1": 97,
+      "retention_pct": 25.9
+    },
+    {
+      "cohort_month": "2010-11",
+      "cohort_size": 326,
+      "active_customers_month1": 57,
+      "retention_pct": 17.5
+    },
+    {
+      "cohort_month": "2010-12",
+      "cohort_size": 76,
+      "active_customers_month1": 7,
+      "retention_pct": 9.2
+    },
+    {
+      "cohort_month": "2011-01",
+      "cohort_size": 72,
+      "active_customers_month1": 12,
+      "retention_pct": 16.7
+    },
+    {
+      "cohort_month": "2011-02",
+      "cohort_size": 125,
+      "active_customers_month1": 20,
+      "retention_pct": 16.0
+    },
+    {
+      "cohort_month": "2011-03",
+      "cohort_size": 179,
+      "active_customers_month1": 32,
+      "retention_pct": 17.9
+    },
+    {
+      "cohort_month": "2011-04",
+      "cohort_size": 106,
+      "active_customers_month1": 26,
+      "retention_pct": 24.5
+    },
+    {
+      "cohort_month": "2011-05",
+      "cohort_size": 111,
+      "active_customers_month1": 26,
+      "retention_pct": 23.4
+    },
+    {
+      "cohort_month": "2011-06",
+      "cohort_size": 108,
+      "active_customers_month1": 25,
+      "retention_pct": 23.1
+    },
+    {
+      "cohort_month": "2011-07",
+      "cohort_size": 101,
+      "active_customers_month1": 21,
+      "retention_pct": 20.8
+    },
+    {
+      "cohort_month": "2011-08",
+      "cohort_size": 107,
+      "active_customers_month1": 28,
+      "retention_pct": 26.2
+    },
+    {
+      "cohort_month": "2011-09",
+      "cohort_size": 188,
+      "active_customers_month1": 51,
+      "retention_pct": 27.1
+    },
+    {
+      "cohort_month": "2011-10",
+      "cohort_size": 221,
+      "active_customers_month1": 70,
+      "retention_pct": 31.7
+    },
+    {
+      "cohort_month": "2011-11",
+      "cohort_size": 191,
+      "active_customers_month1": 27,
+      "retention_pct": 14.1
+    }
+  ]
+}

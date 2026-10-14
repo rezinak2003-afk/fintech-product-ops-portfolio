@@ -1,0 +1,3 @@
+Dataset attribution: Chen, D. (2019). Online Retail II [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5CG6D. Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+Aggregate table attribution: Adapted from public aggregate extracts in https://github.com/ndkn-code/online-retail-analytics. See data/DATA_PROVENANCE.md for exact URLs and limitations.

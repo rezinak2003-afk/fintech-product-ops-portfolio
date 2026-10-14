@@ -1,0 +1,1 @@
+The official UCI Online Retail II workbook is not bundled. The optional pipeline downloads it from UCI when run with network access. Raw data is excluded from Git via .gitignore. See ../DATA_PROVENANCE.md.

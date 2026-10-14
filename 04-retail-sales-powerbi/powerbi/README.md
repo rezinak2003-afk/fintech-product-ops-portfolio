@@ -1,0 +1,1 @@
+Power BI handoff files: `POWER_BI_BUILD_GUIDE.md` and `PowerBI_Measures.dax`. Import six populated CSVs from `powerbi_data/`. Native .pbix is not bundled; Power BI Desktop must save that proprietary report container. The static website dashboard is already built for immediate deployment.

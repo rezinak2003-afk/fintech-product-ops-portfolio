@@ -1,0 +1,25 @@
+-- Measures reference the named tables in PowerBI_Import_Pack.xlsx.
+-- If importing CSVs individually, adjust table names to match Power BI's names.
+
+Total Revenue GBP = SUM(MonthlyRevenueTable[revenue_gbp])
+Total Invoices = SUM(MonthlyRevenueTable[invoices])
+Average Invoice Value GBP = DIVIDE([Total Revenue GBP], [Total Invoices])
+
+Return Value GBP = SUM(MonthlyReturnsTable[returns_gbp])
+Return Rate % = DIVIDE([Return Value GBP], SUM(MonthlyReturnsTable[sales_gbp]))
+
+Identified Customers = SUM(RFMSegmentsTable[customers])
+Champion Revenue Share % =
+DIVIDE(
+    CALCULATE(
+        SUM(RFMSegmentsTable[revenue_gbp]),
+        RFMSegmentsTable[segment] = "Champions"
+    ),
+    SUM(RFMSegmentsTable[revenue_gbp])
+)
+
+Month 1 Retention % = AVERAGE(CohortRetentionTable[retention_pct]) / 100
+
+-- These measures operate on aggregate tables. They are not a substitute for a
+-- transaction-level model. Slicers should only be expected to filter related tables.
+-- For full cross-filtering, rebuild from transaction-level data using the optional pipeline.
